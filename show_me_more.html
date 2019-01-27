@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Show me more</title>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style6_showmemore.css">
+    <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+<body>
+
+	<div class="parent-div">
+		<nav>
+			<div class="row clearfix">
+				<img src="images/pick-ur trash.png" class="logo">
+
+				<ul class="main-nav animated slideInUp">
+					<li><a href="indx.html">HOME</a></li>
+					<li><a href="About.html">ABOUT</a></li>
+					<li><a href="contactus.html">CONTACT US</a></li>
+					<li><a href="sign.php">SIGN UP  |  LOGIN</a></li>
+
+					
+
+				</ul>
+				<a href="#" class="mobile-icon" tag name="check-class"  onclick="slideshow()"> <i class="fa fa-bars"></i> </a>
+				
+			</div>
+			
+
+		</nav>
+
+		<div class="child-div">
+			Something to think
+
+
+		</div>
+	
+	</div>
+
+	<div class="container">
+
+		<input type="radio" name="images" id="i1" checked="">
+		<input type="radio" name="images" id="i2" checked="">
+		<input type="radio" name="images" id="i3" checked="">
+
+
+		<div class="slide_img" id="one">
+			<p>keep it clean</p>
+			<img src="images/strip-trash.jpg">
+
+			<label for="i3" class="pre"></label>
+			<label for="i2" class="nxt"></label>
+
+		</div>
+
+		<div class="slide_img" id="two">
+			<p>Today </p>
+			<img src="images/collecting.jpg">
+
+			<label for="i1" class="pre"></label>
+			<label for="i3" class="nxt"></label>
+
+		</div>
+
+		<div class="slide_img" id="three">
+			<p> Notice for Volunters<br>
+				If you are interested please join us. Send us an E-mail from "Contact us" page for more information. Let's make Sri lanka great again.
+			</p>
+			<img src="images/picking.jpg">
+
+			<label for="i2" class="pre"></label>
+			<label for="i1" class="nxt"></label>
+
+		</div>
+
+		<div class="nav">
+			<p></p>
+			<label class="dots" id="dot1" for="i1"></label>
+			<label class="dots" id="dot2" for="i2"></label>
+			<label class="dots" id="dot3" for="i3"></label>
+		</div>
+
+	</div>
+
+</body>
+</html>

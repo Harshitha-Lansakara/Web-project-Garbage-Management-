@@ -1,0 +1,142 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	user-select: none;
+}
+
+body{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('leaves.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+	font-size: 20px;
+	color: black;
+	font-family: 'Flamenco', cursive;
+
+}
+
+.container{
+	width: 450px;
+	margin: 0px auto;
+	
+
+}
+
+.signup,
+.login{
+	width: 50%;
+	height: 60px;
+	background:#FFFFFF;
+	float: left;
+	text-align: center;
+	line-height: 60px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.signup-form,
+.login-form{
+	background:#FFFFFF;
+	box-sizing: border-box;
+	padding: 40px;
+	clear: both;
+	width: 100%;
+	height: 400px;
+}
+
+.input{
+	width:100%;
+	box-sizing: border-box;
+	padding: 20px;
+	margin-bottom: 25px;
+	border:2px solid #e9eae;
+	color: #3e3e40;
+	font-size: 14px;
+	outline: none;
+	transition: all 0.5s ease;
+}
+
+.password{
+	width:100%;
+	box-sizing: border-box;
+	padding: 20px;
+	margin-bottom: 25px;
+	border:2px solid #e9eae;
+	color: #3e3e40;
+	font-size: 14px;
+	outline: none;
+	transition: all 0.5s ease;
+}
+
+.input:focus{
+	border:2px solid #bf55ec;
+}
+
+.password:focus{
+	border:2px solid #bf55ec;
+}
+
+.btn{
+	width: 100%;
+	background:#bf55ec;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	font-weight: bold;
+	letter-spacing: 1px;
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+
+span a{
+	text-decoration: none;
+	color: #070707;
+}
+
+.row{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.logo{
+	height: 200px;
+	width: auto;
+	float: left;
+	margin-top: 0px;
+}
+
+.main-nav{
+	float: right;
+	margin-top: 60px;
+}
+
+.main-nav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 40px;
+}
+
+.main-nav li a{
+	padding: 5px 0px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: lighter;
+}
+
+.main-nav li a:hover{
+	border-bottom: 3px solid #bf55ec;
+}
+
+.clearfix:after{
+	content: ".";
+	visibility: hidden;
+	display: block;/*displays the menu and the logo in one line*/
+	height: 0px;
+	clear: both;
+}

@@ -1,0 +1,135 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 20px;
+	overflow-x: hidden;
+	color: white;
+	font-family: 'Flamenco', cursive;
+}
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('leaves.jpg');
+	background-size: cover;
+	height: 100vh;
+	font-family: 'Flamenco', cursive;
+ 
+}
+
+.contact-title{
+	margin-top: 2px;
+	text-align: center;
+	color: #FFFFFF;
+	transition: all 4s ease-in-out;
+	text-transform: uppercase;
+}
+
+.row{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.logo{
+	height: 200px;
+	width: auto;
+	float: left;
+	margin-top: 0px;
+}
+
+.main-nav{
+	float: right;
+	margin-top: 60px;
+}
+
+.main-nav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 40px;
+}
+
+.main-nav li a{
+	padding: 5px 0px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: lighter;
+}
+
+.main-nav li a:hover{
+	border-bottom: 3px solid #bf55ec;
+}
+
+.clearfix:after{
+	content: ".";
+	visibility: hidden;
+	display: block;/*displays the menu and the logo in one line*/
+	height: 0px;
+	clear: both;
+}
+
+h1{
+	font-weight: lighter;
+	margin-bottom: 10px;
+
+}
+
+h2{
+	font-weight: lighter;
+}
+
+.contact-form{
+	text-align: center;
+}
+
+form{
+	margin-top: 50px;
+	transition: all 4s ease-in-out;
+}
+
+.form-control{
+	width: 400px;
+	background: transparent;
+	border:none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	color: #FFFFFF;
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+
+input{height: 45px;}
+
+.submit{
+	background-color: #bf55ec;
+	border-color: transparent;
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	height: 50px;
+	margin-top: 20px;
+}
+
+.submit:hover{
+	background-color: #F36DC2;
+	cursor: pointer;
+}
+
+.error{
+	color: red;
+}
+
+.success{
+	color: #138531;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+
+
+

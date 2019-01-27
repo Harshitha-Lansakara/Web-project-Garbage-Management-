@@ -1,0 +1,175 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	border:0px;
+}
+
+body{
+	font-size: 20px;
+	overflow-x: hidden;
+	color: #269C2E;
+	font-family: 'Flamenco', cursive;
+}
+
+.parent-div{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('leaves.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+	font-family: 'Flamenco', cursive;
+ 
+}
+
+.child-div{
+	height: 200px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 50px;
+	background: #D3D3D3;
+	text-align: center;
+	font-size: 150px;
+	word-spacing: 5px;
+	letter-spacing: -5px;
+	font-family: 'Flamenco', cursive;
+}
+
+
+.row{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.logo{
+	height: 200px;
+	width: auto;
+	float: left;
+	margin-top: 0px;
+}
+
+.main-nav{
+	float: right;
+	margin-top: 60px;
+}
+
+.main-nav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 40px;
+}
+
+.main-nav li a{
+	padding: 5px 0px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: 100;
+}
+
+.main-nav li a:hover{
+	border-bottom: 3px solid #bf55ec;
+}
+
+.clearfix:after{
+	content: ".";
+	visibility: hidden;
+	display: block;/*displays the menu and the logo in one line*/
+	height: 0px;
+	clear: both;
+
+}
+
+p{
+	z-index: 1000;
+	font-size: 30px;
+	text-align: left;
+	position: absolute;
+	width: 20%;
+	padding-top: 100px;
+	color: white;
+	font-family: 'Flamenco', cursive;
+	margin-left: 500px;
+}
+
+.container{
+	margin: 0 auto;
+	margin-top: 0px;
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 40%;
+	background: #A29999;
+	border: solid 10px #080808;
+	margin-bottom: 0px;
+
+}
+
+.slide_img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.slide_img img{
+	width: 100%;
+	height: 100%;
+}
+
+#i1,#i2,#i3{
+	display: none;
+}
+
+.pre, .nxt{
+	width: 10%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background: rgba(88,88,88,.4);
+	z-index: 99; /*The z-index property specifies the stack order of an element. An element with greater stack order is always in front of an element with a lower stack order. Note: z-index only works on positioned elements (position:absolute, position:relative, or position:fixed).*/
+	cursor: pointer;
+}
+
+.pre{
+	left: 0;
+}
+
+.nxt{
+	right: 0;
+}
+
+.nav{
+	width: 100%;
+	height: 11px;
+	bottom: 12%;
+	position: absolute;
+	text-align: center;
+	z-index: 99;
+}
+
+.dots{
+	top: -5px;
+	width: 18px;
+	height: 18px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 50%;
+	display: inline-block;
+	background: rgba(0,0,0,.8);
+}
+
+.slide_img{
+	z-index: -1;
+}
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three{
+	z-index: 9;
+}
+
+#i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3{
+	background: #fff;
+}
+
